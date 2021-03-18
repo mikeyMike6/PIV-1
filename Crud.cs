@@ -10,8 +10,6 @@ namespace PIV_1
 
         static public void Read(string connectionString) //odczytaj pracownikow
         {
-            var commandText = "SELECT * FROM dbo.Pracownicy";
-            SqlHelper.ExecuteNonQuery(connectionString, commandText);
             SqlHelper.ShowTable(connectionString);
         }
         static public void Create(string connectionString)
